@@ -660,9 +660,14 @@ header h1{
 }
 #qa dl dt{
   font-size: 3.7vw;
-  padding: 2.5% 4% 2.5% calc(4% + 1em);
-  text-indent: -1em;
+  padding: 2.5% 4% 2.5% calc(2% + 1em + 3%);
+  text-indent: calc(-1em - 3%);
   letter-spacing: -1px;
+  line-height: 5vw;
+}
+#qa span{
+  display: inline-block;
+  width: 3%;
 }
 #qa dl dd{
   font-size: 3.7vw;
