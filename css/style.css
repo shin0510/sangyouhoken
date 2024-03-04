@@ -1,0 +1,871 @@
+@import url('https://fonts.cdnfonts.com/css/kozuka-gothic-pr6n');
+img{
+  width: 100%;
+}
+.wrapper{
+  max-width: 728px;
+  width: 71%;
+  margin: 0 auto;
+}
+*{
+  font-family: "kozuka-gothic-pr6n", sans-serif;
+}
+.pc{
+  display: block;
+}
+.sp{
+  display: none;
+}
+@media(max-width:750px){
+  .pc{
+  display: none;
+}
+.sp{
+  display: block;
+}
+.wrapper{
+  max-width: 690px;
+  width: 92%;
+}
+}
+/********************** header ***************************************/
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #EEEEF4;
+  padding: 0 0 0 2%;
+  height: 70px;
+}
+
+header h1{
+  width:24.5%;
+  max-width: 230px;
+}
+
+header nav{
+  width: 80%;
+}
+header nav ul{
+  display: flex;
+  justify-content: flex-end;
+}
+header nav li{
+ margin: 2.8%;
+ display: flex;
+ font-size: 16px;
+font-weight: 500;
+font-style: normal;
+ color: #343480;
+                                                
+}
+@media(max-width:750px){
+  header{
+  padding: 0 4%;
+  height: 10.6vw;
+}
+
+header h1{
+  width:33.3%;
+}
+  .hamburger {
+  position: absolute;
+  right: 4vw;
+  top: 2.4vw;
+  width: 6.66vw;
+  height: 5.33vw;
+  cursor: pointer;
+  z-index: 300;
+}
+
+.hamburger__line {
+  position: absolute;
+  width: 6.66vw;
+  height: 0.5vw;
+  right: 0;
+  background-color: #343480;
+  transition: all 0.5s;
+  border-radius: 1.3vw;
+}
+
+.hamburger__line--1 {
+  top: 0.13vw;
+}
+
+.hamburger__line--2 {
+  top: 2.4vw;
+}
+
+.hamburger__line--3 {
+  top: 4.8vw;
+}
+/*ハンバーガーがクリックされたら*/
+.open.hamburger {
+  right: 4vw;
+  top: 2.66vw;
+  width: 6.66vw;
+  height: 6.66vw;
+}
+.open .hamburger__line {
+  background-color: #fff;
+}
+.open .hamburger__line--1 {
+  transform: rotate(-45deg);
+  top: 2.66vw;
+}
+
+.open .hamburger__line--2 {
+  opacity: 0;
+}
+
+.open .hamburger__line--3 {
+  transform: rotate(45deg);
+  top: 2.66vw;
+}
+.sp-nav {
+  position: fixed;
+  opacity: 0;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  width: 100%;
+  height: 100vh;
+  background-color: #343480;
+  transition: all 0.5s;
+  z-index: 200;
+  overflow-y: hidden;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+}
+.open.sp-nav {
+  opacity: 1;
+  pointer-events: all;
+}
+.no_scroll{
+  overflow: hidden;
+}
+
+.sp-nav nav ul li{
+  text-align: center;
+  color: #fff;
+  font-size: 32px;
+  font-weight: 500;
+  margin: 25% 0;
+}
+
+}
+
+
+/********************** /header ***************************************/
+
+/********************** btn-area ***************************************/
+.btn-area{
+  background-color:#343480 ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 215px;
+}
+.btn-area a{
+  display: block;
+  height: 100%;
+}
+.btn-area p{
+  width: 59%;
+  max-width: 605px;
+}
+@media(max-width:750px){
+  .btn-area{
+  height: 35vw;
+}
+
+.btn-area p{
+  width: 80%;
+}
+}
+/********************** /btn-area ***************************************/
+/********************** part1 ***************************************/
+.part1{
+  background-image: url(../images/pc/back.png);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 3.2% 0 11%;
+  background-color: #F7F6EC;
+}
+@media(max-width:750px){
+  .part1{
+  background-image: url(../images/sp/back.png);
+  padding: 9vw 0 13vw;
+}
+}
+/********************** suggestion **********************/
+#suggestion h2{
+  width:72% ;
+  margin: 0 auto 5.5%;
+}
+
+/********************** /suggestion *******************/
+/********************** reason *******************/
+#reason h2{
+  width: 63.3%;
+  margin:5.5% auto 5.3%;
+}
+#reason p:nth-child(1){
+  margin:3% 0 4.5%;
+}
+#reason p:nth-child(2){
+  margin:0 0 12.2% ;
+}
+
+@media(max-width:750px){
+  #reason h2{
+  width: 67.7%;
+  margin:5.5% auto 5%;
+}
+#reason p:nth-child(1){
+  margin:3% 0 4.5%;
+}
+#reason p:nth-child(2){
+  margin:0 0 12.2% ;
+}
+#reason p:nth-child(3){
+  margin:0 0 4% ;
+}
+}
+/********************** /reason *******************/
+
+/********************** /part1 ***************************************/
+
+/********************** part2 ***************************************/
+.part2{
+  padding: 1% 0 5%;
+  background-color: #F7F6EC;
+}
+@media(max-width:750px){
+  .part2{
+  padding: 3.2% 0 10%;
+}
+}
+/********************** solution **********************/
+#solution h2{
+  width:68.5% ;
+  margin: 0 auto 3.5%;
+}
+#solution p:nth-child(2){
+  margin: 0 auto 3.5%;
+  color: #343480;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  letter-spacing: -0.65px;
+}
+#solution p:nth-child(2) span{
+  font-weight: 700;
+  border-bottom: 2px solid #343480;
+}
+#solution p:nth-child(1){
+  margin: 0 auto 5.5%;
+  color: #343480;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+@media(max-width:750px){
+  #solution h2{
+  width:68.4% ;
+  margin: 0 auto 5.5%;
+}
+#solution p:nth-child(2){
+  margin: 0 auto 5.5%;
+  color: #343480;
+  font-size: 3.7vw;
+  line-height: 6.26vw;
+  text-align: justify;
+}
+
+}
+/********************** /solution *******************/
+/********************** about *******************/
+
+#about h2{
+  width:56.8% ;
+  margin: 9.5% auto 4%;
+}
+#about p:nth-child(2){
+  font-weight: 400;
+  color: #343480;
+  font-size: 19px;
+  line-height: 32px;
+  letter-spacing: -0.3px;
+  text-align: justify;
+}
+#about p:nth-child(3){
+  margin: 2% 0 9%;
+}
+#about h3{
+  background-color: #343480;
+  color: #fff;
+  text-align: center;
+  font-size: 27px;
+  font-weight: 700;
+  padding: 2.3% 0;
+}
+#about p:nth-child(5){
+  font-weight: 400;
+  color: #343480;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: -0.5px;
+  margin: 3% 0;
+  text-align: justify;
+}
+#about p:nth-child(5) span{
+  font-weight: 700;
+  border-bottom: 2px solid #343480;
+}
+
+@media(max-width:750px){
+  #about h2{
+  width:63% ;
+  margin: 5.5% auto ;
+}
+#about p:nth-child(2){
+  font-size: 3.7vw;
+  line-height: 6.2vw;
+  letter-spacing: -1.5px;
+  
+}
+#about p:nth-child(3){
+  margin: 5.5% 0;
+}
+#about h3{
+  font-size: 4.5vw;
+  line-height: 6.4vw;
+  font-weight: 700;
+  padding: 2.8% 10%;
+}
+#about p:nth-child(5){
+  font-size: 3.7vw;
+  line-height: 6.2vw;
+  margin: 3% 0;
+}
+}
+/********************** /about *******************/
+
+
+/********************** /part2 ***************************************/
+
+/********************** menu *******************/
+
+#menu h2{
+  width:75.68% ;
+  margin: 5.5% auto 3.5%;
+}
+
+@media(max-width:750px){
+  #menu h2{
+  width:86% ;
+  margin: 5.5% auto ;
+}
+
+}
+/********************** /menu *******************/
+
+/********************** part3 ***************************************/
+.part3{
+  background-color: #EEEEF2;
+}
+/********************** about-us *******************/
+#about-us{
+  padding: 19% 0 5%;
+}
+#about-us h2{
+  width:47.65% ;
+  margin: 0 auto;
+}
+#about-us .tunoda{
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 20px;
+  padding: 22px 24px ;
+  margin-top: 36px;
+}
+#about-us .tunoda h4{
+  width: 38.5%;
+}
+#about-us .tunoda p{
+  font-size:17px;
+  line-height: 28px;
+  font-weight: 400;
+  width:57.6% ;
+}
+#about-us .about-content h3{
+  text-align: center;
+  color: #343480;
+  font-size: 25px;
+  font-weight: 700;
+  position: relative;
+  margin: 9% 0 7%;
+}
+#about-us .voice.about-content h3{
+  margin: 5.5% 0 4%;
+}
+#about-us .about-content h3::after{
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom:-16px ;
+  width:67px;
+  height: 3px;
+  background-color: #343480;
+}
+#about-us .about-content .about-content-inner{
+  background-color: #fff;
+  border-radius: 28px;
+  padding: 41px 25.4px ;
+}
+#about-us .about-content .about-content-inner>div{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#about-us .about-content .about-content-inner>div h4{
+  width: 30%;
+}
+#about-us .about-content .about-content-inner>div div{
+  width: 65.5%;
+}
+#about-us .about-content .about-content-inner>div div h5{
+  font-size: 17px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #343480;
+  width: 61px;
+  text-align: center;
+  border-radius: 15px;
+  padding: 3px 0;
+}
+#about-us .about-content .about-content-inner>div div p{
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #000;
+  padding: 0 0 0 8px;
+  margin:6px 0  16px;
+}
+#about-us .about-content .about-content-inner>div div ul{
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #000;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 8px;
+  letter-spacing: -1px;
+  justify-content: space-between;
+  margin-top: 7px;
+}
+#about-us .greeting ul li:nth-child(2n-1){
+  width: 38%;
+}
+#about-us .greeting ul li:nth-child(2n){
+  width: 58%;
+}
+#about-us .voice ul li:nth-child(2n-1){
+  width: 30%;
+}
+#about-us .voice ul li:nth-child(2n){
+  width: 70%;
+}
+#about-us .voice ul li:nth-child(5){
+  width: auto;
+}
+#about-us .about-content .about-content-inner>p{
+  font-size: 17px;
+  line-height: 28px;
+  letter-spacing: -0.1px;
+  margin-top: 27px;
+
+}
+/********************** /about-us *******************/
+/********************** /part3 ***************************************/
+/********************** part4 ***************************************/
+.part4{
+  background-color: #F8F7ED;
+  padding: 7% 0 7%;
+}
+@media(max-width:750px){
+  .part4{
+  padding: 5% 0;
+}
+}
+/********************** flow *******************/
+#flow h2{
+  width: 62.8%;
+  margin: 0 auto 8%; 
+}
+@media(max-width:750px){
+  #flow h2{
+  width: 67.8%;
+}
+}
+/********************** /menu *******************/
+/********************** /part4 ***************************************/
+/********************** part5 ***************************************/
+.part5{
+  background-color:#F4F4F8;
+}
+/********************** qa *******************/
+#qa{
+  padding: 9.5% 0 3%;
+}
+#qa h2{
+  text-align: center;
+  font-size: 37px;
+  color: #343480;
+  font-weight: 700;
+  margin-bottom: 6%;
+  letter-spacing: -3px;
+}
+#qa dl dt{
+  background-color: #343480;
+  color: #fff;
+  font-weight: 500;
+  font-size: 20px;
+  padding: 2% 4%;
+}
+#qa dl dd{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000;
+  padding: 2% 8% 3% calc(8% + 1em);
+  margin-bottom: 3.2%;
+  text-indent: -1.2em;
+  text-align: justify;
+}
+@media(max-width:750px){
+  #qa{
+  padding: 5% 0 3%;
+}
+#qa h2{
+  font-size: 5.3vw;
+  margin-bottom: 3%;
+}
+#qa dl dt{
+  font-size: 3.7vw;
+  padding: 2% 6% 2% calc(6% + 1em);
+  text-indent: -1em;
+  letter-spacing: -1px;
+}
+#qa dl dd{
+  font-size: 3.7vw;
+  line-height: 5.9vw;
+  padding: 3% 8% 3% calc(8% + 1em);
+  margin-bottom: 5%;
+  text-indent: -1.2em;
+}
+}
+/********************** /qa *******************/
+/********************** /part5 ***************************************/
+/********************** part6 ***************************************/
+.part6{
+  padding:45px 0 ;
+}
+/********************** contact *******************/
+#contact {
+  margin: 0 auto 3%;
+  width: 69.67%;
+}
+#contact h2{
+  text-align: center;
+  font-size: 37px;
+  color: #343480;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+#contact form table {
+  width: 100%;
+}
+#contact form table tr{
+  display: flex;
+  flex-direction: column;
+}
+#contact form table tr th label{
+  font-size: 18px;
+  color: #333;
+  font-weight: 700;
+  display: flex;
+  align-items:center;
+  margin-bottom: 8px;
+}
+#contact form table tr th label span{
+  font-size: 12px;
+  line-height: 12px;
+  color: #fff;
+  background-color: #343480;
+  padding: 3.5px 9px;
+  border-radius: 10px;
+  margin-left: 5px;
+}
+#contact form table tr td{
+  border:#666 1px solid ;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 19px;
+}
+#contact form table tr td input,#contact form table tr td textarea{
+  font-size: 18px;
+  width: 100%;
+  padding:8px ;
+  resize: none;
+}
+#contact p{
+  font-size: 16px;
+  color: #000;
+  line-height: 22px;
+  letter-spacing: -1px;
+  margin-top: 23px;
+}
+#contact p span{
+  border-bottom: #000 2px solid;
+}
+#contact .agree{
+  display: flex;
+  align-items: center;
+  margin: 14px 0 37px;
+}
+#contact input[type="checkbox"] {
+  position: relative;
+  width: 22px;
+  height: 22px;
+  border: 1px solid #666;
+  margin-right: 15px;
+}
+#contact .check{
+  font-size: 16px;
+  font-weight: 400;
+}
+#contact h3{
+  text-align: center;
+  width: 72%;
+  height: 61px;
+  margin: 0 auto;
+}
+#contact h3 input{
+  border: 0;
+  width: 100%;
+  height: 100%;
+ background-image: url(../images/pc/submit.png);
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: contain;
+}
+
+@media(max-width:750px){
+  #contact {
+  margin: 0 auto 3%;
+  width: 100%;
+}
+#contact h2{
+  font-size: 5.3vw;
+  margin-bottom: 3%;
+}
+
+#contact form table tr th label{
+  font-size: 3.7vw;
+  margin-bottom: 8px;
+}
+#contact form table tr th label span{
+  font-size: 2.1vw;
+  line-height: 4vw;
+  padding: 0 1.6vw;
+  border-radius: 1.9vw;
+  margin-left: 5px;
+}
+#contact form table tr td{
+  border-radius: 1.1vw;
+  margin-bottom: 19px;
+}
+#contact form table tr td input,#contact form table tr td textarea{
+  font-size: 2.1vw;
+  line-height: 4vw;
+  padding:8px ;
+}
+#contact p{
+  font-size: 3.7vw;
+  line-height: 5.46vw;
+  letter-spacing: -0.4px;
+  margin-top: 23px;
+}
+
+#contact .agree{
+  margin: 14px 0 37px;
+}
+#contact input[type="checkbox"] {
+  width: 4vw;
+  height: 4vw;
+  margin-right: 15px;
+}
+#contact .check{
+  font-size: 3.7vw;
+}
+#contact h3{
+  width: 66.4vw;
+  height: 10.5vw;
+  margin: 0 auto;
+}
+#contact h3 input{
+ background-image: url(../images/pc/submit.png);
+}
+}
+/********************** /conatct *******************/
+/********************** /part6 ***************************************/
+
+/********************** footer ***************************************/
+footer{
+  background-color: #F4F4F8;
+  padding: 55px 0 2%;
+  text-align: center;
+  color: #3A3A3A;
+}
+footer h1{
+  width: 36.5%;
+  margin: 0 auto 45px;
+}
+footer h2{
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0 auto 10px;
+}
+footer p{
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 21px;
+  display: block;
+  width: 180px;
+  text-align: left;
+  margin: 0 auto 58px;
+}
+footer small{
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  margin: 0 auto;
+}
+@media(max-width:750px){
+  footer{
+  padding: 5.5vw 0 7vw;
+}
+footer h1{
+  width: 46.4vw;
+  margin: 0 auto 45px;
+}
+footer h2{
+  font-size: 4vw;
+  margin: 0 auto 5.73vw;
+}
+footer p{
+  font-size: 3.46vw;
+  line-height: 4.5vw;
+  width: 56%;
+  margin: 0 auto 5.73vw;
+}
+footer small{
+  font-size: 2.4vw;
+  line-height: 3.3vw;
+}
+}
+/********************** /footer ***************************************/
+
+/********************** privacypolicy ***************************************/
+#privacy{
+  width: 87.5%;
+  margin: 0 auto;
+  padding: 5% 0;
+}
+#privacy h2{
+  text-align: center;
+  margin-bottom:32px ;
+  font-weight: 500;
+  font-size: 22px;
+}
+#privacy h3{
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+}
+#privacy p{
+  margin-bottom:40px ;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+}
+#privacy h4{
+  font-weight: 500;
+  font-size: 20px;
+  margin-top:50px ;
+}
+#privacy h4 button{
+  background-color: #343480;
+  display: flex;
+  width: 120px;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+  height: 34px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 11px;
+}
+@media(max-width:750px){
+  #privacy{
+  width: 92%;
+}
+#privacy h2{
+  font-size: 4.66vw;
+  margin-bottom: 8.5%;
+}
+#privacy h3{
+  font-size: 3.7vw;
+  line-height: 6.26vw;
+}
+#privacy p{
+  margin-bottom:5% ;
+  font-size: 3.7vw;
+  line-height: 6.26vw;
+}
+#privacy h4{
+  font-weight: 500;
+  font-size: 20px;
+  margin-top:50px ;
+}
+#privacy h4 button{
+  background-color: #343480;
+  display: flex;
+  width: 120px;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+  height: 34px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 11px;
+}
+
+}
+/********************** /privacypolicy ***************************************/
+
+
+.aaaa{
+  position: absolute;
+  top: 0 ;
+  left: 0;
+  opacity: 0.4;
+}
