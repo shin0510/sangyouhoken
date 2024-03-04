@@ -30,7 +30,7 @@ if (version_compare(PHP_VERSION, '5.1.0', '>=')) {//PHP5.1.0以上の場合の�
 //---------------------------　必須設定　必ず設定してください　-----------------------
 
 //サイトのトップページのURL　※デフォルトでは送信完了後に「トップページへ戻る」ボタンが表示されますので
-$site_top = "index.html";
+$site_top = "https://shin0510.github.io/sangyouhoken";
 
 //管理者のメールアドレス ※メールを受け取るメールアドレス(複数指定する場合は「,」で区切ってください 例 $to = "aa@aa.aa,bb@bb.bb";)
 $to = "shin-h110510@ezweb.ne.jp";
@@ -151,7 +151,7 @@ $hankaku = 0;
 //全角英数字→半角変換を行う項目のname属性の値（name="○○"の「○○」部分）
 //※複数の場合にはカンマで区切って下さい。（上記で「1」を指定した場合のみ有効）
 //配列の形「name="○○[]"」の場合には必ず後ろの[]を取ったものを指定して下さい。
-$hankaku_array = array('電話番号','金額');
+$hankaku_array = array('お電話番号');
 
 //-fオプションによるエンベロープFrom（Return-Path）の設定(する=1, しない=0)　
 //※宛先不明（間違いなどで存在しないアドレス）の場合に 管理者宛に「Mail Delivery System」から「Undelivered Mail Returned to Sender」というメールが届きます。
